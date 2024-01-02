@@ -3,7 +3,10 @@
 Program Name: Vortext
 
 Vortext is a video media player with advanced functionalities such as text extraction from videos and a built-in text editor for modifying and saving extracted text. 
-Copyright (C) 2023 Released under the GNU General Public License by a team comprising Nikoum Modeste Lorene, Pollah yves,Cheycho Mouafo Junior, and Sibafo Wisdom.
+
+Copyright (C) 2023 
+
+Released under the GNU General Public License by a team comprising Nikoum Modeste Lorene, Pollah yves,Cheycho Mouafo Junior, and Sibafo Wisdom.
 
 This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,13 +21,13 @@ This program is free software: you can redistribute it and/or modify
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
-Introduction
-System Requirements
-Installation instructions
-Getting Started (How to use the player)
-Text Extraction Features
-Troubleshooting
-FAQs
+Introduction,
+System Requirements,
+Installation instructions,
+Getting Started (How to use the player),
+Text Extraction Features,
+Troubleshooting,
+FAQs,
 
 Introduction
     Have you ever wanted to copy a text directly from a video rather than rewriting it? 
