@@ -1,0 +1,21 @@
+<RCC>
+  <qresource>
+    <file>icons/logo vortext.png</file>
+    <file>icons/agrandir.png</file>
+    <file>icons/reduce.png</file>
+    <file>icons/close.png</file>
+    <file>icons/vortext.png</file>
+    <file>icons/volume 2.png</file>
+    <file>icons/volume 1.png</file>
+    <file>icons/volume min.png</file>
+    <file>icons/volume max.png</file>
+    <file>icons/down arrow.png</file>
+    <file>icons/up arrow.png</file>
+    <file>icons/copy.png</file>
+    <file>icons/play.png</file>
+    <file>icons/pause.png</file>
+    <file>icons/left arrow.png</file>
+    <file>icons/right arrow.png</file>
+    <file>icons/cut.png</file>
+  </qresource>
+</RCC>

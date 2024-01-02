@@ -1,0 +1,17 @@
+{
+    "QMainWindow": [{
+        "title": "Vortext",
+        "icon": ":/icons/logo vortext.png",
+        "frameless": true,
+        "navigation": [{
+            "minimize": "reduceBtn",
+            "close": "quitBtn",
+            "restore": [{
+                "buttonName": "resizeBtn"
+            }],
+            "moveWindow": "topWidget",
+            "titleBar": "topWidget"
+        }]
+    }]
+
+}

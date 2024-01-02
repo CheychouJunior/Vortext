@@ -1,0 +1,118 @@
+### Technical documentation ###
+
+System Requirements:
+    Hardware Requirements
+        2Gb of RAM
+        2GHz CPU
+    Software Requirements
+        OS: Linux(debian distro)
+        tesseract-ocr
+        python3
+
+Installation Guide:
+    Pre-installation checks
+        - Make sure to have python3.11 installed and tesseract-ocr. If not install install
+            sudo apt install python3
+            sudo apt install tesseract-ocr
+    Step-by-step installation instructions
+        - Install vortext using the .deb package
+            sudo dpkg -i vortext_1.0-1_amd64.deb
+
+Modules:
+    1- ui_vortext.py
+        This file contains the code for the UI of the video media player, which was generated using qt-designer
+        (Qt User Interface Compiler version 6.4.2).
+
+    2- ui_editor.py
+        This file contains the code for the UI of the text editor, which was generated using qt-designer (Qt User 
+        Interface Compiler version 6.4.2).
+
+    3- screen.py
+        This file contains the different functions needed to make a selection, and return the coordinate of the 
+        selection made. It uses Xlib in order to do so.
+        The various functions in this file include
+        
+        - get_mouse_selection(): This function actually makes the selection using the mouse, and return the coordinates i.e 
+                                 the starting point(x,y), the lenght and the height of the selected region using the get_coords 
+                                 function
+        - get_coords(start, end): This function takes into parameter the start and end point, and returns the safe start and 
+                                  safe end e.g if the selection is being made from rigth to left, then the start x will be greater
+                                  than the end x. Apart from the safe start and end, it also return the length and height of the 
+                                  selected region
+        - draw_rectangle(start, end): This function is used to draw a rectangle of the selected region for the user to have a 
+                                      visual confirmation that he/she is selecting the right portion. It does so by taking into 
+                                      parameter the starting and ending point of the selection
+    
+    4- Textmain.py
+        This file contains the code for the implementation of the text editor.
+        It contains a class that inherits from the QMainWindow and sets it ui to the ui_editor.py.
+        The following functions are being implemented 
+
+        - copy(): function to copy a selected text in the editor and store in the clipboard
+        - cut(): function to cut a selected text in the editor and store it in the clipboard
+        - previous(): function in order to undo changes
+        - next(): function in order to revert the undo
+        - save(): function to save the text in a particular file
+
+    5- main.py
+        This file contains the code for the implementation of the video editor.
+        It contains a class that inherits from the QMainWindow and sets it ui to the ui_vortext.py.
+        The following functions are being implemented
+
+        - selectArea(): This function uses the get_mouse_selection function from the screen.py module in order to make a selection
+                        and makes a screenshot using the shootScreen function
+        - shootScreen(): This function is used to make the screenshot and store it in the directory /tmp/vortext in the name screenshot.png.
+                         It uses the screen library in order to make the screenshot then uses the coordinates of the selected portion from
+                         the selectArea function in order to cut the screenshot.png and leave only the required portion.
+                         It then extract the text from screenshot.png using pytesseract and stores it in /tmp/vortext/test.txt.
+        - open_window(): This function opens the text editor and prints the content of /tmp/vortext/test.txt in it, with each character being
+                         being printed after every 20 milliseconds
+        - printChar(): This funcion is used to print a character provided there is still a character in the file i.e we have not yet reach the 
+                       EOF
+        - openFile(): This function is used to open a dialog box search for a video in the local directories to read in the video media player.
+                      It sets the name of the video at the videoNameLabel and the duration of the video at the timeLabel in the ui
+        - updateDuration(): This function makes an update on the cur_timeLable in the ui file to indicate the current timestamp in the video, it
+                            is being updated every 1s
+        - toggle_full_screen(): This function is used to toggle to the full screen mode
+        - pause(): This function is used to pause the video
+        - volumeChange(volume): This function is used to change the volume of the paying video 
+        - positionChanged(): Used to change the position of the video slider as the video plays
+        - durationChanged(): Used to set the range of the video slider according to the duration of the video
+        - setPostion(): Used to move forward or backward in the playing video by just sliding the video slider
+
+    
+Variables:
+    Video media player:
+        (Img_1)
+
+        1- videoNameLabel
+        2- reduceBtn
+        3- resizeBtn
+        4- quitBtn
+        5- openBtn
+        6- copyBtn
+        7- selectBtn
+        8- videoSlider
+        9- pauseBtn
+        10- cur_timeLabel
+        11- label
+        12- volumeSlider
+        13- toggleBtn
+        14- timeLabel
+        15- label_2
+        16- logo
+        17- screenWidget
+    
+    Text editor:
+        (Img_2)
+
+        1- reduceBtn
+        2- resizeBtn
+        3- quitBtn
+        4- saveBtn
+        5- textEdit
+        6- copyBtn
+        7- prevBtn
+        8- nextBtn
+        9- cutBtn
+        10- logo

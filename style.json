@@ -1,0 +1,59 @@
+{
+    "QMainWindow": [{
+        "title": "Vortext",
+        "icon": ":/icons/logo vortext.png",
+        "frameless": true,
+        "transluscentBg": true,
+        "sizeGrip": "frame_9",
+        "shadow": [{
+            "color": "#fff",
+            "blurRadius": 20,
+            "xOffset": 0,
+            "centralWidget": "centralwidget"
+        }],
+        "navigation": [{
+            "minimize": "reduceBtn",
+            "close": "quitBtn",
+            "restore": [{
+                "buttonName": "resizeBtn"
+            }],
+            "moveWindow": "topWidget",
+            "titleBar": "topWidget"
+        }]
+    }],
+
+    "QCustomSlideMenu": [{
+        "name": "frame_4",
+        "defaultSize": [{
+            "width": "auto",
+            "height": "auto"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": 0
+        }],
+        "expandedSize": [{
+            "width": "auto",
+            "height": "auto"
+        }],
+        "toggleButton": [{
+            "buttonName": "toggleBtn",
+            "icons": [{
+                "whenMenuIsCollapsed": ":/icons/up arrow.png",
+                "whenMenuIsExpanded": ":/icons/down arrow.png"
+            }]
+        }],
+        "menuTransitionAnimation": [{
+
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 100,
+                "animationEasingCurve": "Linear"
+            }],
+            "whenExpanding": [{
+                "animationDuration": 100,
+                "animationEasingCurve": "OutQuad"
+            }]
+        }]
+    }]
+}
