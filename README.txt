@@ -6,7 +6,7 @@ Vortext is a video media player with advanced functionalities such as text extra
 
 Copyright (C) 2023 
 
-Released under the GNU General Public License by a team comprising Nikoum Modeste Lorene, Pollah yves,Cheycho Mouafo Junior, and Sibafo Wisdom.
+Released under the GNU General Public License by a team comprising Nikoum Modeste Lorene, Pollah yves,Cheychou Mouafo Junior, and Sibafo Wisdom.
 
 This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41,6 +41,7 @@ System Requirements
     distribution: debian
     RAM: atleast 2Gb
     storage: atleast 300Mb
+    CPU: 2GHz
 
 Installation instructions
     - Take a copy of the .deb file vortext_1.0-1_amd64.deb
@@ -100,3 +101,11 @@ FAQs
     - How do i open another video? must i reopen the window?
         Just click on the open button and it will automatically end the currently playing video in order to
         open another
+
+
+Emails: 
+    - Cheychou Mouafo Junior: cheychoumouafo@gmail.com
+    - Sibafo Wisdom: 
+    - Pollah Yves: 
+    - Nikoum Modeste Lorene: 
+
