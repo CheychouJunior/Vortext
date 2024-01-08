@@ -105,7 +105,7 @@ FAQs
 
 Emails: 
     - Cheychou Mouafo Junior: cheychoumouafo@gmail.com
-    - Sibafo Wisdom: 
+    - Sibafo Wisdom: wisdomsibafo45@gmail.com
     - Pollah Yves: 
     - Nikoum Modeste Lorene: 
 
